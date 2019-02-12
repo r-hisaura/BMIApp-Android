@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BMI計算アプリ</string>
+    <string name="title_input">入力</string>
+    <string name="title_history">履歴</string>
+</resources>
