@@ -3,7 +3,6 @@ package com.example.cries.calcbmi
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AlertDialog
-import android.support.v7.widget.Toolbar
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,13 +22,14 @@ class InputFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_input, container, false)
     }
 
+    // TODO:onResumeでいい？
     override fun onResume() {
         super.onResume()
         val context = context as? MainActivity ?: return
-        calcBmiButton.setOnClickListener {
-            // 入力値が数値でない場合、ダイアログを表示する
-            val height = editHeight.text.toString().toDoubleOrNull() ?: 0.0
-            val weight = editWeight.text.toString().toDoubleOrNull() ?: 0.0
+        calc_bmi_button.setOnClickListener {
+            // 入力値が0または数値でない場合、ダイアログを表示する
+            val height = height_edit.text.toString().toDoubleOrNull() ?: 0.0
+            val weight = weight_edit.text.toString().toDoubleOrNull() ?: 0.0
 
             if (height == 0.0 || weight == 0.0) {
                 AlertDialog.Builder(context)
@@ -39,10 +39,9 @@ class InputFragment : Fragment() {
                 return@setOnClickListener
             }
 
+            // BMIを計算する
             val data = CalcBmiLogic.calcBmi(height, weight)
-            textBmi.text = String.format("%.1f", data)
+            result_bmi_text.text = String.format("%.1f", data)
         }
-
     }
-
 }
