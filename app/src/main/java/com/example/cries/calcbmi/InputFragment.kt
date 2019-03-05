@@ -26,6 +26,8 @@ class InputFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         val context = context as? MainActivity ?: return
+
+        // 計算ボタン押下時の処理
         calc_bmi_button.setOnClickListener {
             // 入力値が0または数値でない場合、ダイアログを表示する
             val height = height_edit.text.toString().toDoubleOrNull() ?: 0.0
@@ -42,6 +44,12 @@ class InputFragment : Fragment() {
             // BMIを計算する
             val data = CalcBmiLogic.calcBmi(height, weight)
             result_bmi_text.text = String.format("%.1f", data)
+        }
+
+        // 削除ボタン押下時の処理
+        delete_button.setOnClickListener {
+            // コメント内を削除する
+            comment_edit.text.clear()
         }
     }
 }
