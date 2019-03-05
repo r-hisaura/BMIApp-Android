@@ -3,6 +3,7 @@ package com.example.cries.calcbmi
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import kotlinx.android.synthetic.main.list_item.view.*
+import kotlinx.android.synthetic.main.list_section_item.view.*
 
 /**
  * 履歴画面のリストのViewを保持するクラス
