@@ -16,14 +16,13 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/header_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:gravity="center"
                 android:text="@string/title_input"
-                android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <View
@@ -33,20 +32,20 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/view1"
+            android:id="@+id/container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/header"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/caption_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
                 android:gravity="center"
-                android:text="@string/height_weight_input"
+                android:text="@string/info_input"
                 android:textSize="18sp" />
 
             <LinearLayout
@@ -56,17 +55,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/height_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
                     android:gravity="end"
-                    android:text="@string/height"
+                    android:text="@string/info_height"
                     android:textSize="20sp" />
 
                 <EditText
-                    android:id="@+id/editHeight"
+                    android:id="@+id/height_edit"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -81,13 +80,13 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/cm_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginBottom="17dp"
                     android:layout_weight="1"
-                    android:text="@string/cm"
+                    android:text="@string/info_cm"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -99,17 +98,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/weight_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
                     android:gravity="end"
-                    android:text="@string/weight"
+                    android:text="@string/info_weight"
                     android:textSize="20sp" />
 
                 <EditText
-                    android:id="@+id/editWeight"
+                    android:id="@+id/weight_edit"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -124,19 +123,19 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/kg_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginBottom="17dp"
                     android:layout_weight="1"
-                    android:text="@string/kg"
+                    android:text="@string/info_kg"
                     android:textSize="20sp" />
 
             </LinearLayout>
 
             <Button
-                android:id="@+id/calcBmiButton"
+                android:id="@+id/calc_bmi_button"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -148,7 +147,7 @@
                 android:background="@drawable/frame_style"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
-                android:text="@string/calc_bmi"
+                android:text="@string/button_calc_bmi"
                 android:textSize="24sp" />
 
             <View
@@ -163,17 +162,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/result_start_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:text="@string/result_start_text"
+                    android:text="@string/info_result_start"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textBmi"
+                    android:id="@+id/result_bmi_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -182,12 +181,12 @@
                     android:textSize="30sp" />
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/result_end_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="@string/result_end_text"
+                    android:text="@string/info_result_end"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -200,7 +199,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editComment"
+                    android:id="@+id/comment_edit"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_marginLeft="15dp"
@@ -209,7 +208,7 @@
                     android:background="@drawable/frame_style_2"
                     android:ems="15"
                     android:gravity="top"
-                    android:hint="@string/comment_hint"
+                    android:hint="@string/hint_comment"
                     android:inputType="text|textMultiLine"
                     android:paddingStart="10dp"
                     android:paddingTop="10dp"
@@ -225,18 +224,18 @@
 
 
                 <Button
-                    android:id="@+id/deleteButton"
+                    android:id="@+id/delete_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/frame_style_2"
-                    android:text="@string/delete"
+                    android:text="@string/button_delete"
                     android:textSize="18sp" />
 
                 <Button
-                    android:id="@+id/saveButton"
+                    android:id="@+id/save_button"
                     style="@android:style/Widget.Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -244,7 +243,7 @@
                     android:layout_marginEnd="15dp"
                     android:layout_weight="1"
                     android:background="@drawable/frame_style"
-                    android:text="@string/save"
+                    android:text="@string/button_save"
                     android:textSize="18sp" />
             </LinearLayout>
 

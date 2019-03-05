@@ -1,16 +1,22 @@
 <resources>
     <string name="app_name">BMI計算アプリ</string>
+
+    <!-- header,navigation -->
     <string name="title_input">入力</string>
     <string name="title_history">履歴</string>
-    <string name="height_weight_input">身長と体重を入力してください</string>
-    <string name="height">身長</string>
-    <string name="cm">cm</string>
-    <string name="weight">体重</string>
-    <string name="kg">kg</string>
-    <string name="calc_bmi">BMIを計算する</string>
-    <string name="result_start_text">あなたのBMIは</string>
-    <string name="result_end_text">でした</string>
-    <string name="comment_hint">言い訳を聞こう</string>
-    <string name="save">保存</string>
-    <string name="delete">削除</string>
+
+    <!--　text -->
+    <string name="info_input">身長と体重を入力してください</string>
+    <string name="info_height">身長</string>
+    <string name="info_cm">cm</string>
+    <string name="info_weight">体重</string>
+    <string name="info_kg">kg</string>
+    <string name="info_result_start">あなたのBMIは</string>
+    <string name="info_result_end">でした</string>
+    <string name="hint_comment">言い訳を聞こう</string>
+
+    <!--button_text -->
+    <string name="button_calc_bmi">BMIを計算する</string>
+    <string name="button_save">保存</string>
+    <string name="button_delete">削除</string>
 </resources>
