@@ -43,8 +43,8 @@
                 android:id="@+id/caption_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text="@string/info_input"
                 android:textSize="18sp" />
@@ -52,7 +52,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -72,7 +72,7 @@
                     android:layout_weight="1"
                     android:autoLink="phone"
                     android:background="@drawable/frame_style_2"
-                    android:ems="10"
+                    android:ems="5"
                     android:inputType="numberDecimal"
                     android:paddingEnd="10dp"
                     android:selectAllOnFocus="false"
@@ -84,8 +84,8 @@
                     android:id="@+id/cm_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
                     android:layout_marginBottom="17dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="1"
                     android:text="@string/info_cm"
                     android:textSize="20sp" />
@@ -115,7 +115,7 @@
                     android:layout_weight="1"
                     android:autoLink="phone"
                     android:background="@drawable/frame_style_2"
-                    android:ems="10"
+                    android:ems="5"
                     android:inputType="numberDecimal"
                     android:paddingEnd="10dp"
                     android:selectAllOnFocus="false"
@@ -140,21 +140,21 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="32dp"
-                android:layout_marginTop="25dp"
                 android:layout_marginRight="32dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/frame_style"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
                 android:text="@string/button_calc_bmi"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="2dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:background="@android:color/darker_gray" />
 
             <LinearLayout
