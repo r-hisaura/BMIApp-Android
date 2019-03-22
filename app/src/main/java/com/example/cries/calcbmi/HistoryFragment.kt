@@ -26,8 +26,6 @@ class HistoryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        super.onViewCreated(view, savedInstanceState)
         Log.d("lifeCycle", "onViewCreated")
 
         val recyclerView = recycler_list

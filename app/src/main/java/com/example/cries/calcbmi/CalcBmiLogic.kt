@@ -3,10 +3,11 @@ package com.example.cries.calcbmi
 import java.lang.Math.round
 
 /**
+ * BMI計算ロジッククラス
  * Created by cries on 2019/02/12.
  */
-class CalcBmiLogic {
-    companion object {
+object CalcBmiLogic {
+
         /**
          * BMIを計算する
          * 計算式 = 体重(kg) / 身長(m) * 身長(m)
@@ -18,6 +19,5 @@ class CalcBmiLogic {
             val result = weight / Math.pow(height / 100, 2.0)
             print("result:$result")
             return round(result * 10.0) / 10.0
-        }
     }
 }
